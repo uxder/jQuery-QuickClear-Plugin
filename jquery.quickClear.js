@@ -39,7 +39,7 @@
 							} else {
 								removeClearButton();
 							};
-					  },
+					  }
 				});
 				clearButton.bind({
 						mousedown: function() {
@@ -47,8 +47,7 @@
 							clearValue();
 							//setTimeOut to allow focus event to fire after the blur event
 							setTimeout(function() { textField.focus();}, 0);  	
-						},
-						
+						}
 				});
 				textField.parent("span").bind({
 						mouseover: function() {
@@ -77,5 +76,4 @@
 		});
 	};
 
-	init();
 })(jQuery);
